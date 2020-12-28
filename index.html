@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ruby City MATSUE Project</title>
+  </head>
+
+  <body>
+    <script>
+    (function() {
+      function browserLanguage() {
+        try {
+          return (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0,2);
+        }
+        catch(e) {
+          return undefined;
+        }
+      }
+
+      location.href = "/ja/";
+      // if (browserLanguage() == "ja") {
+      //   location.href = "/ja/";
+      // } else {
+      //   location.href = "/en/";
+      // }
+    })();
+    </script>
+
+    <ul>
+      <li><a href="/ja/">Ruby City MATSUE Project (Japanese)</a>
+      <!-- <li><a href="/en/">Ruby City MATSUE Project (English)</a> -->
+    </ul>
+  </body>
+</html>
